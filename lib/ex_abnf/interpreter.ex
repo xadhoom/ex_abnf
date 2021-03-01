@@ -91,7 +91,7 @@ defmodule ABNF.Interpreter do
             ex ->
               Logger.error "Unexpected result for rule " <>
               " when running code #{inspect e.code}"
-              stacktrace = System.stacktrace
+              stacktrace = __STACKTRACE__
               reraise ex, stacktrace
           end
         end
