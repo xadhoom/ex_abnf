@@ -13,7 +13,7 @@ defmodule ABNF.Mixfile do
   end
 
   def application do
-    [applications: [:logger]]
+    [extra_applications: [:logger, :crypto]]
   end
 
   defp deps do
